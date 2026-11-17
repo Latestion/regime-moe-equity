@@ -1,0 +1,211 @@
+{
+  "method": {
+    "long_run_variance": "Newey-West, Bartlett weights 1 - l/(L+1), divisor T, no small-sample correction",
+    "lags_L": 5,
+    "p_value": "two-sided, standard normal",
+    "bonferroni_alpha": 0.016666666666666666,
+    "bootstrap": "stationary (Politis-Romano), circular, percentile 95% interval",
+    "bootstrap_mean_block": 10.0,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 42,
+    "series": "daily cross-sectional rank IC over the stocks in each regime, pooled over all folds, sorted by date",
+    "input": "outputs/replay/ic_by_date.csv"
+  },
+  "regimes": {
+    "trend": {
+      "pooled": {
+        "n_dates": 3077,
+        "mean_ic": 0.0197068517041466,
+        "t_independence": 5.216929522382998,
+        "t_newey_west": 3.239743311128816,
+        "p_newey_west": 0.0011963734680922045,
+        "significant_bonferroni": true,
+        "se_ratio_nw_over_independence": 1.6102910080753514,
+        "boot_ci95": [
+          0.007522102116673281,
+          0.032119829923801156
+        ]
+      },
+      "mixture": {
+        "n_dates": 3077,
+        "mean_ic": 0.025871616295348454,
+        "t_independence": 7.130954291299975,
+        "t_newey_west": 4.564347607839585,
+        "p_newey_west": 5.010500029323239e-06,
+        "significant_bonferroni": true,
+        "se_ratio_nw_over_independence": 1.562316217777118,
+        "boot_ci95": [
+          0.0146435108493184,
+          0.03707210025013627
+        ]
+      },
+      "paired_mixture_minus_pooled": {
+        "n_dates": 3077,
+        "mean_ic": 0.006164764591201858,
+        "t_independence": 2.5991145572970082,
+        "t_newey_west": 1.8129934565585542,
+        "p_newey_west": 0.06983283055601408,
+        "significant_bonferroni": false,
+        "se_ratio_nw_over_independence": 1.43360393712103,
+        "boot_ci95": [
+          -0.0008689975754543371,
+          0.013633616102512656
+        ]
+      },
+      "folds_favouring_mixture": 15,
+      "n_folds": 25,
+      "lag_sensitivity_t": {
+        "0": {
+          "pooled": 5.217777458922101,
+          "mixture": 7.132113324918569,
+          "paired": 2.5995370058259737
+        },
+        "5": {
+          "pooled": 3.239743311128816,
+          "mixture": 4.564347607839585,
+          "paired": 1.8129934565585542
+        },
+        "10": {
+          "pooled": 3.1066589061889274,
+          "mixture": 4.440059881611805,
+          "paired": 1.7358028266333683
+        },
+        "20": {
+          "pooled": 3.0357672790485304,
+          "mixture": 4.403754904885444,
+          "paired": 1.6392714376545203
+        }
+      }
+    },
+    "chop": {
+      "pooled": {
+        "n_dates": 3081,
+        "mean_ic": -0.0046870451457350125,
+        "t_independence": -0.9789905865678212,
+        "t_newey_west": -0.6133169949262712,
+        "p_newey_west": 0.5396667582097932,
+        "significant_bonferroni": false,
+        "se_ratio_nw_over_independence": 1.596222825499086,
+        "boot_ci95": [
+          -0.020019896612542075,
+          0.01094077158370023
+        ]
+      },
+      "mixture": {
+        "n_dates": 3081,
+        "mean_ic": 0.014216782390975161,
+        "t_independence": 3.074626756851624,
+        "t_newey_west": 1.995542444688114,
+        "p_newey_west": 0.04598374970041563,
+        "significant_bonferroni": false,
+        "se_ratio_nw_over_independence": 1.5407473617190646,
+        "boot_ci95": [
+          -6.582380207079622e-05,
+          0.02814773200840968
+        ]
+      },
+      "paired_mixture_minus_pooled": {
+        "n_dates": 3081,
+        "mean_ic": 0.01890382753671017,
+        "t_independence": 4.81744116632406,
+        "t_newey_west": 3.4403545409051692,
+        "p_newey_west": 0.0005809526197855241,
+        "significant_bonferroni": true,
+        "se_ratio_nw_over_independence": 1.400274625491527,
+        "boot_ci95": [
+          0.008158681554494585,
+          0.029556324579719653
+        ]
+      },
+      "folds_favouring_mixture": 19,
+      "n_folds": 25,
+      "lag_sensitivity_t": {
+        "0": {
+          "pooled": -0.9791495007132668,
+          "mixture": 3.0751258440648535,
+          "paired": 4.818223154993495
+        },
+        "5": {
+          "pooled": -0.6133169949262712,
+          "mixture": 1.995542444688114,
+          "paired": 3.4403545409051692
+        },
+        "10": {
+          "pooled": -0.5896957096138213,
+          "mixture": 1.9275186117763932,
+          "paired": 3.336508092495333
+        },
+        "20": {
+          "pooled": -0.5780566705905643,
+          "mixture": 1.9163536036279436,
+          "paired": 3.4421818340872163
+        }
+      }
+    },
+    "meanrev": {
+      "pooled": {
+        "n_dates": 3064,
+        "mean_ic": 0.011947256585224459,
+        "t_independence": 4.141710420876905,
+        "t_newey_west": 2.337847511910963,
+        "p_newey_west": 0.01939515991305152,
+        "significant_bonferroni": false,
+        "se_ratio_nw_over_independence": 1.771591346217213,
+        "boot_ci95": [
+          0.0015588217382731646,
+          0.022462502787688125
+        ]
+      },
+      "mixture": {
+        "n_dates": 3064,
+        "mean_ic": 0.01177215105479388,
+        "t_independence": 4.144750392198719,
+        "t_newey_west": 2.367915679057832,
+        "p_newey_west": 0.017888612351681044,
+        "significant_bonferroni": false,
+        "se_ratio_nw_over_independence": 1.7503792169862527,
+        "boot_ci95": [
+          0.0015700460640449745,
+          0.021814236759191818
+        ]
+      },
+      "paired_mixture_minus_pooled": {
+        "n_dates": 3064,
+        "mean_ic": -0.00017510553043058126,
+        "t_independence": -0.12862679556736126,
+        "t_newey_west": -0.08639571917903395,
+        "p_newey_west": 0.9311518498085167,
+        "significant_bonferroni": false,
+        "se_ratio_nw_over_independence": 1.4888098251814277,
+        "boot_ci95": [
+          -0.004400851898812432,
+          0.0040707887109383755
+        ]
+      },
+      "folds_favouring_mixture": 12,
+      "n_folds": 25,
+      "lag_sensitivity_t": {
+        "0": {
+          "pooled": 4.14238645294227,
+          "mixture": 4.145426920464418,
+          "paired": -0.1286477907189852
+        },
+        "5": {
+          "pooled": 2.337847511910963,
+          "mixture": 2.367915679057832,
+          "paired": -0.08639571917903395
+        },
+        "10": {
+          "pooled": 2.2192942199271086,
+          "mixture": 2.2480837976843353,
+          "paired": -0.08229430401288568
+        },
+        "20": {
+          "pooled": 2.1555508408389,
+          "mixture": 2.1869203855892754,
+          "paired": -0.07871777143713078
+        }
+      }
+    }
+  }
+}

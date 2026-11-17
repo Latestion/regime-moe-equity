@@ -171,7 +171,12 @@ def load_for_token(token: str) -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 
 
-def attach_to_panel(panel: pd.DataFrame, *, persist_too: bool = False) -> pd.DataFrame:
+def attach_to_panel(
+    panel: pd.DataFrame,
+    *,
+    persist_too: bool = False,
+    thresholds: Thresholds = DEFAULT_THRESHOLDS,
+) -> pd.DataFrame:
     """Add a `regime` column to a feature panel (long format).
 
     Reuses the panel's own `logret_1` and `rv_20` where available; if a
@@ -203,7 +208,7 @@ def attach_to_panel(panel: pd.DataFrame, *, persist_too: bool = False) -> pd.Dat
             "rv_5": rv_5, "rv_20": rv_20, "rv_60": rv_60,
             "adx_proxy": adx_proxy, "vol_ratio": vol_ratio,
         }, index=grp.index)
-        labels = classify(sig)
+        labels = classify(sig, thresholds=thresholds)
         out.loc[grp.index, "regime"] = labels.values
         if persist_too:
             d = grp[["date"]].copy()

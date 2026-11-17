@@ -1,0 +1,34 @@
+{
+  "summary": {
+    "portfolio": {
+      "pooled": 1.07,
+      "mixture": 0.961
+    },
+    "conditional": {
+      "sharpe": 0.894,
+      "quoted_in_findings_note": 0.894
+    },
+    "mixture_blend_w05": {
+      "sharpe": 1.145,
+      "quoted_in_findings_note": 1.145
+    },
+    "mixture_blend_w03": {
+      "sharpe": 1.471,
+      "quoted_in_findings_note": 1.471
+    },
+    "pooled_blend_w05": {
+      "sharpe": 1.173,
+      "quoted_in_findings_note": 1.173
+    },
+    "pooled_blend_w03": {
+      "sharpe": 1.504,
+      "quoted_in_findings_note": 1.504
+    },
+    "lowvol_control": {
+      "sharpe": 1.515,
+      "quoted_in_findings_note": 1.515
+    }
+  },
+  "mismatches_vs_committed": [],
+  "tolerance": 1e-06
+}

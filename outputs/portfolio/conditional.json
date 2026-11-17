@@ -1,0 +1,156 @@
+{
+  "config": {
+    "base_config": {
+      "ablation": "price_only",
+      "model_type": "lambdarank",
+      "top_k": 15,
+      "rebalance_every": 10,
+      "weighting": "inverse_vol",
+      "momentum_weight": 0.0,
+      "max_name_weight": 0.1,
+      "max_sector_weight": 0.3,
+      "rank_buffer": 5,
+      "min_holding_days": 10,
+      "max_turnover": 0.6,
+      "cost_bps": 10.0,
+      "slippage_bps": 5.0,
+      "seed": 42
+    },
+    "min_regime_train_rows": 5000
+  },
+  "regime_config_overrides": {
+    "trend": {
+      "top_k": 10,
+      "rank_buffer": 8,
+      "min_holding_days": 15
+    },
+    "chop": {
+      "top_k": 25,
+      "rank_buffer": 3,
+      "min_holding_days": 5
+    },
+    "meanrev": {
+      "top_k": 15,
+      "rank_buffer": 5,
+      "min_holding_days": 10
+    }
+  },
+  "folds": [
+    {
+      "test_start": "2013-01-04",
+      "test_end": "2013-07-04"
+    },
+    {
+      "test_start": "2013-07-04",
+      "test_end": "2014-01-04"
+    },
+    {
+      "test_start": "2014-01-04",
+      "test_end": "2014-07-04"
+    },
+    {
+      "test_start": "2014-07-04",
+      "test_end": "2015-01-04"
+    },
+    {
+      "test_start": "2015-01-04",
+      "test_end": "2015-07-04"
+    },
+    {
+      "test_start": "2015-07-04",
+      "test_end": "2016-01-04"
+    },
+    {
+      "test_start": "2016-01-04",
+      "test_end": "2016-07-04"
+    },
+    {
+      "test_start": "2016-07-04",
+      "test_end": "2017-01-04"
+    },
+    {
+      "test_start": "2017-01-04",
+      "test_end": "2017-07-04"
+    },
+    {
+      "test_start": "2017-07-04",
+      "test_end": "2018-01-04"
+    },
+    {
+      "test_start": "2018-01-04",
+      "test_end": "2018-07-04"
+    },
+    {
+      "test_start": "2018-07-04",
+      "test_end": "2019-01-04"
+    },
+    {
+      "test_start": "2019-01-04",
+      "test_end": "2019-07-04"
+    },
+    {
+      "test_start": "2019-07-04",
+      "test_end": "2020-01-04"
+    },
+    {
+      "test_start": "2020-01-04",
+      "test_end": "2020-07-04"
+    },
+    {
+      "test_start": "2020-07-04",
+      "test_end": "2021-01-04"
+    },
+    {
+      "test_start": "2021-01-04",
+      "test_end": "2021-07-04"
+    },
+    {
+      "test_start": "2021-07-04",
+      "test_end": "2022-01-04"
+    },
+    {
+      "test_start": "2022-01-04",
+      "test_end": "2022-07-04"
+    },
+    {
+      "test_start": "2022-07-04",
+      "test_end": "2023-01-04"
+    },
+    {
+      "test_start": "2023-01-04",
+      "test_end": "2023-07-04"
+    },
+    {
+      "test_start": "2023-07-04",
+      "test_end": "2024-01-04"
+    },
+    {
+      "test_start": "2024-01-04",
+      "test_end": "2024-07-04"
+    },
+    {
+      "test_start": "2024-07-04",
+      "test_end": "2025-01-04"
+    },
+    {
+      "test_start": "2025-01-04",
+      "test_end": "2025-07-04"
+    }
+  ],
+  "aggregate": {
+    "n_days": 3082,
+    "years": 12.23,
+    "total_return": 1.245,
+    "cagr": 0.0684,
+    "ann_vol": 0.0773,
+    "sharpe": 0.894,
+    "sortino": 1.477,
+    "calmar": 0.324,
+    "max_drawdown": -0.2111,
+    "mdd_peak": "2017-07-31",
+    "mdd_trough": "2020-03-19",
+    "win_rate": 0.522,
+    "hit_rate": 0.527,
+    "exposure": 0.992
+  }
+}

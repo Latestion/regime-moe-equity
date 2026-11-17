@@ -1,0 +1,42 @@
+hmmlearn 0.3.3; loading feature panel ...
+  File "<site-packages>/joblib\externals\loky\backend\context.py", line 257, in _count_physical_cores
+    cpu_info = subprocess.run(
+               ^^^^^^^^^^^^^^^
+  File "<python>/Lib/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python>/Lib/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "<python>/Lib/subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  fold  1  2013-01-04 -> 2013-07-04  fits={'ok': 133, 'too_little_history': 5, 'fit_error': 0} share={'meanrev': 0.4846, 'trend': 0.2912, 'chop': 0.2242}  (21s)
+  fold  2  2013-07-04 -> 2014-01-04  fits={'ok': 134, 'too_little_history': 4, 'fit_error': 0} share={'meanrev': 0.3841, 'chop': 0.3399, 'trend': 0.276}  (24s)
+  fold  3  2014-01-04 -> 2014-07-04  fits={'ok': 136, 'too_little_history': 2, 'fit_error': 0} share={'meanrev': 0.4577, 'chop': 0.2871, 'trend': 0.2552}  (25s)
+  fold  4  2014-07-04 -> 2015-01-04  fits={'ok': 137, 'too_little_history': 1, 'fit_error': 0} share={'meanrev': 0.4711, 'trend': 0.2711, 'chop': 0.2578}  (26s)
+  fold  5  2015-01-04 -> 2015-07-04  fits={'ok': 137, 'too_little_history': 1, 'fit_error': 0} share={'meanrev': 0.4756, 'trend': 0.2797, 'chop': 0.2447}  (29s)
+  fold  6  2015-07-04 -> 2016-01-04  fits={'ok': 138, 'too_little_history': 4, 'fit_error': 0} share={'meanrev': 0.4867, 'trend': 0.2861, 'chop': 0.2272}  (31s)
+  fold  7  2016-01-04 -> 2016-07-04  fits={'ok': 138, 'too_little_history': 4, 'fit_error': 0} share={'meanrev': 0.4774, 'trend': 0.2907, 'chop': 0.2319}  (32s)
+  fold  8  2016-07-04 -> 2017-01-04  fits={'ok': 138, 'too_little_history': 9, 'fit_error': 0} share={'meanrev': 0.5025, 'trend': 0.2986, 'chop': 0.1989}  (34s)
+  fold  9  2017-01-04 -> 2017-07-04  fits={'ok': 138, 'too_little_history': 11, 'fit_error': 0} share={'meanrev': 0.528, 'trend': 0.3284, 'chop': 0.1436}  (35s)
+  fold 10  2017-07-04 -> 2018-01-04  fits={'ok': 138, 'too_little_history': 20, 'fit_error': 0} share={'meanrev': 0.5426, 'trend': 0.3202, 'chop': 0.1373}  (38s)
+  fold 11  2018-01-04 -> 2018-07-04  fits={'ok': 142, 'too_little_history': 19, 'fit_error': 0} share={'meanrev': 0.4935, 'trend': 0.3113, 'chop': 0.1952}  (41s)
+  fold 12  2018-07-04 -> 2019-01-04  fits={'ok': 142, 'too_little_history': 21, 'fit_error': 0} share={'meanrev': 0.431, 'trend': 0.3069, 'chop': 0.2621}  (40s)
+  fold 13  2019-01-04 -> 2019-07-04  fits={'ok': 147, 'too_little_history': 17, 'fit_error': 0} share={'meanrev': 0.5229, 'trend': 0.296, 'chop': 0.1811}  (44s)
+  fold 14  2019-07-04 -> 2020-01-04  fits={'ok': 149, 'too_little_history': 16, 'fit_error': 0} share={'meanrev': 0.5115, 'trend': 0.2799, 'chop': 0.2085}  (43s)
+  fold 15  2020-01-04 -> 2020-07-04  fits={'ok': 158, 'too_little_history': 9, 'fit_error': 0} share={'chop': 0.4502, 'meanrev': 0.3171, 'trend': 0.2327}  (48s)
+  fold 16  2020-07-04 -> 2021-01-04  fits={'ok': 160, 'too_little_history': 9, 'fit_error': 0} share={'meanrev': 0.4714, 'trend': 0.3279, 'chop': 0.2007}  (48s)
+  fold 17  2021-01-04 -> 2021-07-04  fits={'ok': 163, 'too_little_history': 9, 'fit_error': 0} share={'meanrev': 0.4572, 'trend': 0.3334, 'chop': 0.2094}  (51s)
+  fold 18  2021-07-04 -> 2022-01-04  fits={'ok': 164, 'too_little_history': 12, 'fit_error': 0} share={'meanrev': 0.5098, 'trend': 0.3367, 'chop': 0.1535}  (54s)
+  fold 19  2022-01-04 -> 2022-07-04  fits={'ok': 165, 'too_little_history': 12, 'fit_error': 0} share={'meanrev': 0.4922, 'trend': 0.2896, 'chop': 0.2182}  (56s)
+  fold 20  2022-07-04 -> 2023-01-04  fits={'ok': 167, 'too_little_history': 10, 'fit_error': 0} share={'meanrev': 0.5389, 'trend': 0.3335, 'chop': 0.1276}  (61s)
+  fold 21  2023-01-04 -> 2023-07-04  fits={'ok': 169, 'too_little_history': 9, 'fit_error': 0} share={'meanrev': 0.5612, 'trend': 0.3504, 'chop': 0.0883}  (61s)
+  fold 22  2023-07-04 -> 2024-01-04  fits={'ok': 172, 'too_little_history': 9, 'fit_error': 0} share={'meanrev': 0.5244, 'trend': 0.3632, 'chop': 0.1124}  (62s)
+  fold 23  2024-01-04 -> 2024-07-04  fits={'ok': 176, 'too_little_history': 6, 'fit_error': 0} share={'meanrev': 0.4906, 'trend': 0.3209, 'chop': 0.1885}  (63s)
+  fold 24  2024-07-04 -> 2025-01-04  fits={'ok': 177, 'too_little_history': 10, 'fit_error': 0} share={'meanrev': 0.5228, 'trend': 0.3524, 'chop': 0.1248}  (67s)
+  fold 25  2025-01-04 -> 2025-07-04  fits={'ok': 177, 'too_little_history': 13, 'fit_error': 0} share={'meanrev': 0.5081, 'trend': 0.3197, 'chop': 0.1722}  (72s)
+
+paired mixture - pooled (Newey-West L=5):
+  trend    diff=+0.0018  t=+0.72  p=0.4693  CI=[-0.0034, +0.0068]
+  chop     diff=+0.0199  t=+4.39  p=0.0000  CI=[+0.0105, +0.0291]
+  meanrev  diff=-0.0007  t=-0.37  p=0.7078  CI=[-0.0043, +0.0029]

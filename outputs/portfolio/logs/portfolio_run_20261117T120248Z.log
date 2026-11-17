@@ -1,0 +1,57 @@
+loading feature panel from 2010-01-01 ...
+panel: 601,424 rows
+
+== portfolio
+   {'pooled': 1.07, 'mixture': 0.961}   (405s)
+
+== conditional
+   {'sharpe': 0.894, 'quoted_in_findings_note': 0.894}   (371s)
+
+== mixture_blend_w05
+   {'sharpe': 1.145, 'quoted_in_findings_note': 1.145}   (394s)
+
+== mixture_blend_w03
+   {'sharpe': 1.471, 'quoted_in_findings_note': 1.471}   (357s)
+
+== pooled_blend_w05
+   {'sharpe': 1.173, 'quoted_in_findings_note': 1.173}   (178s)
+
+== pooled_blend_w03
+   {'sharpe': 1.504, 'quoted_in_findings_note': 1.504}   (177s)
+
+== lowvol_control
+   {'sharpe': 1.515, 'quoted_in_findings_note': 1.515}   (201s)
+
+=== summary ===
+{
+  "portfolio": {
+    "pooled": 1.07,
+    "mixture": 0.961
+  },
+  "conditional": {
+    "sharpe": 0.894,
+    "quoted_in_findings_note": 0.894
+  },
+  "mixture_blend_w05": {
+    "sharpe": 1.145,
+    "quoted_in_findings_note": 1.145
+  },
+  "mixture_blend_w03": {
+    "sharpe": 1.471,
+    "quoted_in_findings_note": 1.471
+  },
+  "pooled_blend_w05": {
+    "sharpe": 1.173,
+    "quoted_in_findings_note": 1.173
+  },
+  "pooled_blend_w03": {
+    "sharpe": 1.504,
+    "quoted_in_findings_note": 1.504
+  },
+  "lowvol_control": {
+    "sharpe": 1.515,
+    "quoted_in_findings_note": 1.515
+  }
+}
+
+all committed portfolio results reproduced within 1e-6.

@@ -1,0 +1,215 @@
+{
+  "purge_sessions": 10,
+  "label_horizon_sessions": 5,
+  "inference": {
+    "method": {
+      "long_run_variance": "Newey-West, Bartlett weights 1 - l/(L+1), divisor T, no small-sample correction",
+      "lags_L": 5,
+      "p_value": "two-sided, standard normal",
+      "bonferroni_alpha": 0.016666666666666666,
+      "bootstrap": "stationary (Politis-Romano), circular, percentile 95% interval",
+      "bootstrap_mean_block": 10.0,
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 42,
+      "series": "daily cross-sectional rank IC over the stocks in each regime, pooled over all folds, sorted by date",
+      "input": "outputs/purge10/ic_by_date.csv"
+    },
+    "regimes": {
+      "trend": {
+        "pooled": {
+          "n_dates": 3077,
+          "mean_ic": 0.02287186720140082,
+          "t_independence": 6.019760062371219,
+          "t_newey_west": 3.7007987195123064,
+          "p_newey_west": 0.00021492190812089085,
+          "significant_bonferroni": true,
+          "se_ratio_nw_over_independence": 1.6266110422683315,
+          "boot_ci95": [
+            0.010328352378825735,
+            0.03557219522986437
+          ]
+        },
+        "mixture": {
+          "n_dates": 3077,
+          "mean_ic": 0.030502162592337043,
+          "t_independence": 8.35174496353607,
+          "t_newey_west": 5.3242397976225195,
+          "p_newey_west": 1.0137610040317213e-07,
+          "significant_bonferroni": true,
+          "se_ratio_nw_over_independence": 1.568626748792466,
+          "boot_ci95": [
+            0.01904180834795865,
+            0.04179581335581653
+          ]
+        },
+        "paired_mixture_minus_pooled": {
+          "n_dates": 3077,
+          "mean_ic": 0.0076302953909362205,
+          "t_independence": 3.0957406897462185,
+          "t_newey_west": 2.12643720235289,
+          "p_newey_west": 0.033466872881167564,
+          "significant_bonferroni": false,
+          "se_ratio_nw_over_independence": 1.4558345227974754,
+          "boot_ci95": [
+            -1.892070482378615e-05,
+            0.01583293043243452
+          ]
+        },
+        "folds_favouring_mixture": 13,
+        "n_folds": 25,
+        "lag_sensitivity_t": {
+          "0": {
+            "pooled": 6.020738487418293,
+            "mixture": 8.353102419045,
+            "paired": 3.0962438576796103
+          },
+          "5": {
+            "pooled": 3.7007987195123064,
+            "mixture": 5.3242397976225195,
+            "paired": 2.12643720235289
+          },
+          "10": {
+            "pooled": 3.5295717315205635,
+            "mixture": 5.130071369762542,
+            "paired": 1.9815296871390293
+          },
+          "20": {
+            "pooled": 3.425097650156434,
+            "mixture": 5.069108937554741,
+            "paired": 1.822436524546944
+          }
+        }
+      },
+      "chop": {
+        "pooled": {
+          "n_dates": 3081,
+          "mean_ic": 0.000279117667416529,
+          "t_independence": 0.058257598080791395,
+          "t_newey_west": 0.0362060899148326,
+          "p_newey_west": 0.9711180301250679,
+          "significant_bonferroni": false,
+          "se_ratio_nw_over_independence": 1.6090552229702362,
+          "boot_ci95": [
+            -0.015083131437513745,
+            0.01581379052453382
+          ]
+        },
+        "mixture": {
+          "n_dates": 3081,
+          "mean_ic": 0.019488727958740446,
+          "t_independence": 4.206592630323759,
+          "t_newey_west": 2.7659289114482912,
+          "p_newey_west": 0.00567609068607422,
+          "significant_bonferroni": true,
+          "se_ratio_nw_over_independence": 1.5208607180439464,
+          "boot_ci95": [
+            0.005529438706744503,
+            0.03340702200995147
+          ]
+        },
+        "paired_mixture_minus_pooled": {
+          "n_dates": 3081,
+          "mean_ic": 0.019209610291323915,
+          "t_independence": 5.075125371530319,
+          "t_newey_west": 3.686927587485688,
+          "p_newey_west": 0.00022697791033410297,
+          "significant_bonferroni": true,
+          "se_ratio_nw_over_independence": 1.376518863228154,
+          "boot_ci95": [
+            0.009194926508141571,
+            0.029147752440116585
+          ]
+        },
+        "folds_favouring_mixture": 20,
+        "n_folds": 25,
+        "lag_sensitivity_t": {
+          "0": {
+            "pooled": 0.05826705471555554,
+            "mixture": 4.207275463317514,
+            "paired": 5.075949188656357
+          },
+          "5": {
+            "pooled": 0.0362060899148326,
+            "mixture": 2.7659289114482912,
+            "paired": 3.686927587485688
+          },
+          "10": {
+            "pooled": 0.03491328357232359,
+            "mixture": 2.67529660099109,
+            "paired": 3.648717874127293
+          },
+          "20": {
+            "pooled": 0.03447461723403543,
+            "mixture": 2.6415048298111534,
+            "paired": 3.7549062414564833
+          }
+        }
+      },
+      "meanrev": {
+        "pooled": {
+          "n_dates": 3064,
+          "mean_ic": 0.012704480877441715,
+          "t_independence": 4.459184598873927,
+          "t_newey_west": 2.532825764304633,
+          "p_newey_west": 0.011314717885477332,
+          "significant_bonferroni": true,
+          "se_ratio_nw_over_independence": 1.7605571854636282,
+          "boot_ci95": [
+            0.0020049805052161193,
+            0.023145431998005676
+          ]
+        },
+        "mixture": {
+          "n_dates": 3064,
+          "mean_ic": 0.011742218232399387,
+          "t_independence": 4.152484589498486,
+          "t_newey_west": 2.3675417826713745,
+          "p_newey_west": 0.01790669798204081,
+          "significant_bonferroni": false,
+          "se_ratio_nw_over_independence": 1.7539224101097393,
+          "boot_ci95": [
+            0.0014423643945755194,
+            0.02194091130295523
+          ]
+        },
+        "paired_mixture_minus_pooled": {
+          "n_dates": 3064,
+          "mean_ic": -0.0009622626450423271,
+          "t_independence": -0.6764043920685662,
+          "t_newey_west": -0.4384192583270872,
+          "p_newey_west": 0.6610823884844368,
+          "significant_bonferroni": false,
+          "se_ratio_nw_over_independence": 1.54282545581957,
+          "boot_ci95": [
+            -0.005550438814484116,
+            0.003630673608431582
+          ]
+        },
+        "folds_favouring_mixture": 12,
+        "n_folds": 25,
+        "lag_sensitivity_t": {
+          "0": {
+            "pooled": 4.459912450767924,
+            "mixture": 4.1531623801811195,
+            "paired": -0.6765147984011497
+          },
+          "5": {
+            "pooled": 2.532825764304633,
+            "mixture": 2.3675417826713745,
+            "paired": -0.4384192583270872
+          },
+          "10": {
+            "pooled": 2.382898809984283,
+            "mixture": 2.229087227144009,
+            "paired": -0.4174743830257517
+          },
+          "20": {
+            "pooled": 2.2932513560748906,
+            "mixture": 2.1662750621173874,
+            "paired": -0.4009682915805639
+          }
+        }
+      }
+    }
+  }
+}

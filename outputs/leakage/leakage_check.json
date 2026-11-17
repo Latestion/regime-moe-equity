@@ -1,0 +1,37 @@
+{
+  "fixed": {
+    "trend": {
+      "n_dates": 3077,
+      "mean_ic": 0.0197068517041466,
+      "t_independence": 5.216929522382997
+    },
+    "chop": {
+      "n_dates": 3081,
+      "mean_ic": -0.004687045145735012,
+      "t_independence": -0.9789905865678211
+    },
+    "meanrev": {
+      "n_dates": 3064,
+      "mean_ic": 0.01194725658522446,
+      "t_independence": 4.141710420876905
+    }
+  },
+  "leaky": {
+    "trend": {
+      "n_dates": 3077,
+      "mean_ic": 0.016933078123318516,
+      "t_independence": 4.628206826201397
+    },
+    "chop": {
+      "n_dates": 3081,
+      "mean_ic": -0.002282925236876579,
+      "t_independence": -0.4860690808235391
+    },
+    "meanrev": {
+      "n_dates": 3064,
+      "mean_ic": 0.011389809845107344,
+      "t_independence": 4.121142344716385
+    }
+  },
+  "gate_fixed_reproduces_published_pooled": true
+}

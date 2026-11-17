@@ -1,0 +1,362 @@
+{
+  "published_source": "data/regime_mixture_result.json",
+  "tolerance": 1e-06,
+  "n_checks": 51,
+  "n_failures": 0,
+  "reproduced": true,
+  "n_folds_published": 25,
+  "n_folds_reproduced": 25,
+  "checks": [
+    {
+      "field": "pooled_baseline.chop.n_obs",
+      "published": 3081,
+      "reproduced": 3081,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.chop.mean_ic",
+      "published": -0.004687045145735012,
+      "reproduced": -0.004687045145735012,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.chop.ic_std",
+      "published": 0.2657458370430443,
+      "reproduced": 0.2657458370430443,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.chop.t_stat",
+      "published": -0.9789905865678211,
+      "reproduced": -0.9789905865678211,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.chop.p_value",
+      "published": 0.327584630730376,
+      "reproduced": 0.327584630730376,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.chop.significant",
+      "published": false,
+      "reproduced": false,
+      "match": true
+    },
+    {
+      "field": "pooled_baseline.meanrev.n_obs",
+      "published": 3064,
+      "reproduced": 3064,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.meanrev.mean_ic",
+      "published": 0.01194725658522446,
+      "reproduced": 0.01194725658522446,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.meanrev.ic_std",
+      "published": 0.15967349840580206,
+      "reproduced": 0.15967349840580206,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.meanrev.t_stat",
+      "published": 4.141710420876905,
+      "reproduced": 4.141710420876905,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.meanrev.p_value",
+      "published": 3.4472540833219156e-05,
+      "reproduced": 3.4472540833219156e-05,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.meanrev.significant",
+      "published": true,
+      "reproduced": true,
+      "match": true
+    },
+    {
+      "field": "pooled_baseline.trend.n_obs",
+      "published": 3077,
+      "reproduced": 3077,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.trend.mean_ic",
+      "published": 0.0197068517041466,
+      "reproduced": 0.0197068517041466,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.trend.ic_std",
+      "published": 0.20953955965760535,
+      "reproduced": 0.20953955965760535,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.trend.t_stat",
+      "published": 5.216929522382997,
+      "reproduced": 5.216929522382997,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.trend.p_value",
+      "published": 1.8191343587048436e-07,
+      "reproduced": 1.8191343587048436e-07,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "pooled_baseline.trend.significant",
+      "published": true,
+      "reproduced": true,
+      "match": true
+    },
+    {
+      "field": "mixture.chop.n_obs",
+      "published": 3081,
+      "reproduced": 3081,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.chop.mean_ic",
+      "published": 0.01421678239097516,
+      "reproduced": 0.01421678239097516,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.chop.ic_std",
+      "published": 0.25665797464179846,
+      "reproduced": 0.25665797464179846,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.chop.t_stat",
+      "published": 3.0746267568516235,
+      "reproduced": 3.0746267568516235,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.chop.p_value",
+      "published": 0.002107661372015901,
+      "reproduced": 0.002107661372015901,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.chop.significant",
+      "published": true,
+      "reproduced": true,
+      "match": true
+    },
+    {
+      "field": "mixture.meanrev.n_obs",
+      "published": 3064,
+      "reproduced": 3064,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.meanrev.mean_ic",
+      "published": 0.011772151054793881,
+      "reproduced": 0.011772151054793881,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.meanrev.ic_std",
+      "published": 0.15721784001524475,
+      "reproduced": 0.15721784001524475,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.meanrev.t_stat",
+      "published": 4.144750392198717,
+      "reproduced": 4.144750392198717,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.meanrev.p_value",
+      "published": 3.4018405878466496e-05,
+      "reproduced": 3.4018405878466496e-05,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.meanrev.significant",
+      "published": true,
+      "reproduced": true,
+      "match": true
+    },
+    {
+      "field": "mixture.trend.n_obs",
+      "published": 3077,
+      "reproduced": 3077,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.trend.mean_ic",
+      "published": 0.025871616295348458,
+      "reproduced": 0.025871616295348458,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.trend.ic_std",
+      "published": 0.20125174605963142,
+      "reproduced": 0.20125174605963142,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.trend.t_stat",
+      "published": 7.130954291299974,
+      "reproduced": 7.130954291299974,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.trend.p_value",
+      "published": 9.967582315084655e-13,
+      "reproduced": 9.967582315084655e-13,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "mixture.trend.significant",
+      "published": true,
+      "reproduced": true,
+      "match": true
+    },
+    {
+      "field": "paired.trend.n_common_dates",
+      "published": 3077,
+      "reproduced": 3077,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "paired.trend.mean_ic_diff",
+      "published": 0.0061647645912018606,
+      "reproduced": 0.0061647645912018606,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "paired.trend.paired_t_stat",
+      "published": 2.599114557297009,
+      "reproduced": 2.599114557297009,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "paired.trend.pooled_mean_ic",
+      "published": 0.0197068517041466,
+      "reproduced": 0.0197068517041466,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "paired.trend.mixture_mean_ic",
+      "published": 0.025871616295348458,
+      "reproduced": 0.025871616295348458,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "paired.meanrev.n_common_dates",
+      "published": 3064,
+      "reproduced": 3064,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "paired.meanrev.mean_ic_diff",
+      "published": -0.0001751055304305823,
+      "reproduced": -0.0001751055304305823,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "paired.meanrev.paired_t_stat",
+      "published": -0.12862679556736198,
+      "reproduced": -0.12862679556736198,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "paired.meanrev.pooled_mean_ic",
+      "published": 0.01194725658522446,
+      "reproduced": 0.01194725658522446,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "paired.meanrev.mixture_mean_ic",
+      "published": 0.011772151054793881,
+      "reproduced": 0.011772151054793881,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "paired.chop.n_common_dates",
+      "published": 3081,
+      "reproduced": 3081,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "paired.chop.mean_ic_diff",
+      "published": 0.01890382753671017,
+      "reproduced": 0.01890382753671017,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "paired.chop.paired_t_stat",
+      "published": 4.81744116632406,
+      "reproduced": 4.81744116632406,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "paired.chop.pooled_mean_ic",
+      "published": -0.004687045145735012,
+      "reproduced": -0.004687045145735012,
+      "match": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "paired.chop.mixture_mean_ic",
+      "published": 0.01421678239097516,
+      "reproduced": 0.01421678239097516,
+      "match": true,
+      "abs_diff": 0.0
+    }
+  ]
+}

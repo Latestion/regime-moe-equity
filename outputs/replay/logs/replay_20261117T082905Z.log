@@ -1,0 +1,38 @@
+run started (UTC): 20261117T082905Z
+python 3.11.9 on Windows-10-10.0.26300-SP0
+numpy 2.2.6 | pandas 2.2.2 | scipy 1.14.1 | lightgbm 4.6.0
+dataset manifest development partition: {"date_range": ["2010-01-04", "2025-08-29"], "rows": 601424, "sessions": 3866, "tokens": 190, "sha256_close_series": "1fed784ecae94e8118699e4a9fa887729cf6346a47acba93c0e5385eb7d87fe9", "storage": "data/features/*.parquet (2010-01 through 2025-08 monthly partitions)"}
+loading feature panel from 2010-01-01 ...
+panel: 601,424 rows, 2010-01-04 -> 2025-08-29
+replaying walk-forward folds ...
+  fold  1  2013-01-04 -> 2013-07-04  (8s)
+  fold  2  2013-07-04 -> 2014-01-04  (8s)
+  fold  3  2014-01-04 -> 2014-07-04  (7s)
+  fold  4  2014-07-04 -> 2015-01-04  (8s)
+  fold  5  2015-01-04 -> 2015-07-04  (9s)
+  fold  6  2015-07-04 -> 2016-01-04  (10s)
+  fold  7  2016-01-04 -> 2016-07-04  (9s)
+  fold  8  2016-07-04 -> 2017-01-04  (12s)
+  fold  9  2017-01-04 -> 2017-07-04  (30s)
+  fold 10  2017-07-04 -> 2018-01-04  (27s)
+  fold 11  2018-01-04 -> 2018-07-04  (27s)
+  fold 12  2018-07-04 -> 2019-01-04  (34s)
+  fold 13  2019-01-04 -> 2019-07-04  (28s)
+  fold 14  2019-07-04 -> 2020-01-04  (19s)
+  fold 15  2020-01-04 -> 2020-07-04  (15s)
+  fold 16  2020-07-04 -> 2021-01-04  (14s)
+  fold 17  2021-01-04 -> 2021-07-04  (15s)
+  fold 18  2021-07-04 -> 2022-01-04  (16s)
+  fold 19  2022-01-04 -> 2022-07-04  (19s)
+  fold 20  2022-07-04 -> 2023-01-04  (19s)
+  fold 21  2023-01-04 -> 2023-07-04  (20s)
+  fold 22  2023-07-04 -> 2024-01-04  (24s)
+  fold 23  2024-01-04 -> 2024-07-04  (22s)
+  fold 24  2024-07-04 -> 2025-01-04  (24s)
+  fold 25  2025-01-04 -> 2025-07-04  (28s)
+
+reproduced all 51 published statistics within 1e-06.
+wrote ./outputs/replay/ic_by_date.csv (9,222 rows)
+wrote ./outputs/replay/ic_by_fold.csv (75 rows)
+saved 100 checkpoints + manifest to ./outputs/replay/checkpoints
+log: ./outputs/replay/logs/replay_20261117T082905Z.log

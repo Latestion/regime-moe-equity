@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "provider": "Yahoo Finance chart API (EOD/actions/macro/fundamentals) + AngelOne (NSE token master)",
+  "universe": "yahoo_angel200",
+  "universe_note": "A current NSE large/liquid-cap proxy discovered via yfinance screening, reconciled to AngelOne tokens. This is NOT point-in-time NIFTY200 membership: it has no delisted/dropped names and is dated 2026-09-01, so it carries survivorship bias. Labelled as such everywhere it is used.",
+  "downloaded_at_utc": "2026-09-01T22:54:00Z",
+  "requested_start": "2010-01-01",
+  "members": 200,
+  "member_fetch_failures": 0,
+  "feature_panel": {
+    "rows": 650811,
+    "tokens": 200,
+    "first_date": "2010-01-04",
+    "last_date": "2026-09-01",
+    "missing_fraction": 0.23373892858857415,
+    "sector_coverage": 0.0,
+    "sector_coverage_note": "ticker_meta sector/industry enrichment was never run for this universe; sector-relative momentum and max_sector_weight constraints degenerate to a single unnamed sector until this is populated."
+  },
+  "development": {
+    "date_range": ["2010-01-04", "2025-08-29"],
+    "rows": 601424,
+    "sessions": 3866,
+    "tokens": 190,
+    "sha256_close_series": "1fed784ecae94e8118699e4a9fa887729cf6346a47acba93c0e5385eb7d87fe9",
+    "storage": "data/features/*.parquet (2010-01 through 2025-08 monthly partitions)"
+  },
+  "sealed_holdout": {
+    "date_range": ["2025-09-01", "2026-09-01"],
+    "rows": 49387,
+    "sessions": 252,
+    "tokens": 200,
+    "sha256_close_series": "4a545e03c0ba0d626c75ba63dde8707beac70e67dc895acf546df2fa4ea61b81",
+    "storage": "data/research/nifty_holdout_sealed/*.parquet (2025-09 through 2026-09 monthly partitions), physically removed from data/features/ so features.load_features() cannot return holdout rows by accident.",
+    "opened": false
+  },
+  "hash_method": "sha256 of a sorted (token,date,close) CSV rendering; recomputing after any repartition or reload must reproduce these values exactly, or the corresponding split has changed."
+}
